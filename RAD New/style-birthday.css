@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body{
+    background-color: #ffffff;
+    font-family: 'Abril Fatface', cursive;
+    font-family: 'Arvo', serif;
+    font-family: 'Caveat', cursive;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Lobster', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.grid{
+    display: grid;
+    width: 114em;
+    grid-gap: 6rem;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    align-items: start;
+}
+
+.grid-item{
+    background-color: #ffffff;
+    border-radius: 0.4em;
+    overflow: hidden;
+    box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.grid-item:hover{
+    transform: translateY(-0.5%);
+    box-shadow: 0.4rem 8rem #E7ECEC;
+}
+
+.card-img{
+    display: block;
+    width: 100%;
+    height: 25%;
+    object-fit: cover;
+}
+
+.card-content{
+    padding: 3rem;
+}
+
+.card-header{
+    font-size: 3rem;
+    font-weight: bold;
+    color: #E3ED11;
+    font-family: 'Abril Fatface', cursive;
+    font-family: 'Arvo', serif;
+    font-family: 'Caveat', cursive;
+    font-family: 'Josefin Sans', sans-serif; 
+    margin-bottom: 1.5rem;
+}
+
+.card-text{
+    font-size: 1.6rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.7;
+    color: #11EDDC;
+    margin-bottom: 2.5rem;
+}
+
+.price{
+    font-size: 1.6rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    line-height: 1.7;
+    color: #666666;
+    margin-bottom: 2.5rem;
+    font-family: 'Abril Fatface', cursive;
+    font-family: 'Arvo', serif;
+    font-family: 'Caveat', cursive;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.card-btn{
+    display: block;
+    width: 100%;
+    padding:1.5rem;
+    font-size: 2rem;
+    text-align: center;
+    color: #ffffff;
+    background-color: #cc33ff;
+    border: 3px solid #ffffff;
+    border-radius: 0.4rem;
+    transition: background-color 0.4s, top 0.4s;
+    cursor: pointer;
+    letter-spacing: 0.1rem;
+}
+
+.card-btn:hover,
+.card-btn:active{
+    background-color: #E7ECEC;
+}
+
+.card{
+    position: relative;
+    height: 100%;
+}
+
+.card:hover{
+    transform: translateY(-0.5%);
+    box-shadow: 0.4rem 8rem #E7ECEC;
+}
+
+@media only screen and (max-width: 60em){
+    body{
+        padding: 3rem;
+    }
+    .grid{
+        grid-gap: 3rem;
+    }
+}
+
+
+
